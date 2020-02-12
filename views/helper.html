@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Colorlib Templates">
+    <meta name="author" content="Colorlib">
+    <meta name="keywords" content="Colorlib Templates">
+
+    <!-- Title Page-->
+    <title>Insurance Helper</title>
+
+    <!-- Icons font CSS-->
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="stylesheets/css/main.css" rel="stylesheet" media="all">
+</head>
+
+<body>
+    <div class="page-wrapper bg-gra-03 p-t-45 p-b-50">
+        <div class="wrapper wrapper--w790">
+            <div class="card card-5">
+                <div class="card-heading">
+                    <h2 class="title">Helper Form</h2>
+                </div>
+                <div class="card-body">
+                    <form action="/helper/addHelper" method="POST">
+                        <div class="form-row m-b-55">
+                            <div class="name">Date</div>
+                            <div class="value">
+                                <div class="row row-space">
+                                    <div class="col-2">
+                                        <div class="input-group-desc">
+                                            <input class="input--style-5" type="datetime-local" name="currentDate">
+                                            <label class="label--desc"></label>
+                                        </div>
+                                    </div>
+                                    <div class="col-2">
+                                        <div class="p-t-15">
+                                            <label class="radio-container m-r-55">Hull
+                                                <input type="radio"  checked="true" value="hull" name="ıtype">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="radio-container">Traffic
+                                                <input type="radio" value="traffic" name="ıtype">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="name">Insurance Company</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-5" type="text" name="company">
+                                </div>
+                            </div>
+
+                            <div class="name">Policy Number</div>
+                            <div class="value">
+                                <div class="input-group" >
+                                    <input class="input--style-5" type="text" name="policyNumber">
+                                </div>
+                            </div>
+
+                            <div class="name">Agency Number</div>
+                            <div class="value">
+                                <div class="input-group" >
+                                    <input class="input--style-5" type="text" name="agencyNumber">
+                                </div>
+                            </div>
+
+                            <div class="name">Policy</div>
+                            <div class="value">
+                                <div class="row row-space">
+                                    <div class="col-2">
+                                        <div class="input-group-desc">
+                                            <input class="start-date" type="date" name="policyBeginDate">
+                                            <label class="label--desc" style="padding-left: 10px;">Begin Date</label>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-2">
+                                        <div class="input-group-desc">
+                                            <input class="end-date" type="date" name="policyEndDate">
+                                            <label class="label--desc" style="padding-left: 13px;">End Date</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                
+                            <div class="value" style="margin-top: 45px; text-align: center;">
+                                <div class="row row-space">
+                                    <div class="col-2">
+                                        <div class="input-group-desc">
+                                            <label class="label" style="padding-left: 10px;">1.Car</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-2">
+                                        <div class="input-group-desc">
+                                            <label class="label" style="padding-left: 13px;">2.Car</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            
+                            <div class="form-row">
+                                <div class="value" style="margin-top: 25px; width: max-content;">
+                                    <div class="row row-refine">
+                                        <div class="col-2">
+                                            <div class="row row-space">
+                                                <div class="name">Owner Name Surname</div>
+                                                <div class="col-6">
+                                                    <input class="input--style-5" type="text" name="owName1">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="row row-space" style="padding-left: 10px;">
+                                                <div class="name">Owner Name Surname</div>
+                                                <div class="col-6">
+                                                    <input class="input--style-5" type="text" name="owName2">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="value" style="margin-top: 25px; width: max-content;">
+                                    <div class="row row-refine">
+                                        <div class="col-2">
+                                            <div class="row row-space">
+                                                <div class="name">IdentityNumber</div>
+                                                <div class="col-6">
+                                                    <input class="input--style-5" type="text" name="owIdNo1">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="row row-space" style="padding-left: 10px;">
+                                                <div class="name">IdentityNumber</div>
+                                                <div class="col-6">
+                                                    <input class="input--style-5" type="text" name="owIdNo2">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="value" style="margin-top: 25px; width: max-content;">
+                                    <div class="row row-refine">
+                                        <div class="col-2">
+                                            <div class="row row-space">
+                                                <div class="name">Phone Number</div>
+                                                <div class="col-6">
+                                                    <input class="input--style-5" type="text" name="owPhone1">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="row row-space" style="padding-left: 10px;">
+                                                <div class="name">Phone Number</div>
+                                                <div class="col-6">
+                                                    <input class="input--style-5" type="text" name="owPhone2">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="form-row">
+
+                                <div class="value" style="margin-top: 25px; width: max-content;">
+                                    <div class="row row-refine">
+                                        <div class="col-2">
+                                            <div class="row row-space">
+                                                <div class="name">Driver Name Surname</div>
+                                                <div class="col-6">
+                                                    <input class="input--style-5" type="text" name="drNameSurname1">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="row row-space" style="padding-left: 10px;">
+                                                <div class="name">Driver Name Surname</div>
+                                                <div class="col-6">
+                                                    <input class="input--style-5" type="text" name="drNameSurname2">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="value" style="margin-top: 25px; width: max-content;">
+                                    <div class="row row-refine">
+                                        <div class="col-2">
+                                            <div class="row row-space">
+                                                <div class="name">IdentityNumber</div>
+                                                <div class="col-6">
+                                                    <input class="input--style-5" type="text" name="drIdNo1">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="row row-space" style="padding-left: 10px;">
+                                                <div class="name">IdentityNumber</div>
+                                                <div class="col-6">
+                                                    <input class="input--style-5" type="text" name="drIdNo2">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="value" style="margin-top: 25px; width: max-content;">
+                                    <div class="row row-refine">
+                                        <div class="col-2">
+                                            <div class="row row-space">
+                                                <div class="name">Phone Number</div>
+                                                <div class="col-6">
+                                                    <input class="input--style-5" type="text" name="drPhone1">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="row row-space" style="padding-left: 10px;">
+                                                <div class="name">Phone Number</div>
+                                                <div class="col-6">
+                                                    <input class="input--style-5" type="text" name="drPhone2">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div class="form-row">
+                                <div class="value" style="margin-top: 25px; width: max-content;">
+                                    <div class="row row-refine">
+                                        <div class="col-2">
+                                            <div class="row row-space">
+                                                <div class="name">License Plate</div>
+                                                <div class="col-6">
+                                                    <input class="input--style-5" type="text" name="plate1">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="row row-space" style="padding-left: 10px;">
+                                                <div class="name">License Plate</div>
+                                                <div class="col-6">
+                                                    <input class="input--style-5" type="text" name="plate2">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="value" style="margin-top: 25px; width: max-content;">
+                                    <div class="row row-refine">
+                                        <div class="col-2">
+                                            <div class="row row-space">
+                                                <div class="name">Brand of the Car</div>
+                                                <div class="col-6">
+                                                    <input class="input--style-5" type="text" name="brandName1">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="row row-space" style="padding-left: 10px;">
+                                                <div class="name">Brand of the Car</div>
+                                                <div class="col-6">
+                                                    <input class="input--style-5" type="text" name="brandName2">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="value" style="margin-top: 25px; width: max-content;">
+                                    <div class="row row-refine">
+                                        <div class="col-2">
+                                            <div class="row row-space">
+                                                <div class="name">Modal of the Car</div>
+                                                <div class="col-6">
+                                                    <input class="input--style-5" type="text" name="modal1">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="row row-space" style="padding-left: 10px;">
+                                                <div class="name">Modal of the Car</div>
+                                                <div class="col-6">
+                                                    <input class="input--style-5" type="text" name="modal2">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="value" style="margin-top: 25px; width: max-content;">
+                                    <div class="row row-refine">
+                                        <div class="col-2">
+                                            <div class="row row-space">
+                                                <div class="name">Usage</div>
+                                                <div class="col-6">
+                                                    <input class="input--style-5" type="text" name="usage1">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="row row-space" style="padding-left: 10px;">
+                                                <div class="name">Usage</div>
+                                                <div class="col-6">
+                                                    <input class="input--style-5" type="text" name="usage2">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="form-row">
+
+                                <div class="name">Address of the Accident</div>
+                                <div class="value">
+                                    <div class="input-group">
+                                        <input class="input--style-5" type="text" name="incidentAddress">
+                                    </div>
+                                </div>
+
+                                <div class="name">Date of the Accident</div>
+                                <div class="value">
+                                    <div class="input-group">
+                                        <input class="input-group" type="datetime-local" name="incidentDate">
+                                    </div>
+                                </div>
+
+                                <div class="name">Estimated Damage Value</div>
+                                <div class="value">
+                                    <div class="input-group">
+                                        <input class="input--style-5" type="text" name="estDamage">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <input type="submit" class="btn btn--radius btn--red">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <!-- Vendor JS-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <script src="vendor/datepicker/moment.min.js"></script>
+    <script src="vendor/datepicker/daterangepicker.js"></script>
+
+    <!-- Main JS-->
+    <script src="/javascripts/js/global.js"></script>
+
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+
+</html>
+<!-- end document-->
